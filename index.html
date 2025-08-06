@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Iglesias - Software Architect & Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #D1D5DB; /* text-gray-300 */
+        }
+        .section-title {
+            color: #F9FAFB; /* text-gray-50 */
+        }
+        .job-card {
+            border-left: 2px solid #374151; /* border-gray-700 */
+            transition: all 0.3s ease-in-out;
+        }
+        .job-card:hover {
+            border-left-color: #3B82F6; /* border-blue-500 */
+            background-color: #1F2937; /* bg-gray-800 */
+        }
+        .skill-tag {
+            background-color: #374151; /* bg-gray-700 */
+            color: #E5E7EB; /* text-gray-200 */
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-tag:hover {
+            background-color: #3B82F6; /* bg-blue-500 */
+            color: #FFFFFF;
+        }
+        .icon-link svg {
+            transition: fill 0.2s ease-in-out;
+        }
+        .icon-link:hover svg {
+            fill: #3B82F6; /* text-blue-500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+            <div>
+                <h1 class="text-4xl sm:text-5xl font-bold text-white">Nicolas Iglesias</h1>
+                <p class="text-xl sm:text-2xl text-blue-400 mt-1">Software Architect & Full-Stack Engineer</p>
+                <p class="mt-2 text-gray-400">Paraná, Entre Ríos, Argentina</p>
+            </div>
+            <div class="flex items-center space-x-4 mt-6 md:mt-0 text-sm">
+                <a href="mailto:nfiglesias@gmail.com" class="icon-link flex items-center space-x-2 hover:text-blue-400">
+                    <svg class="w-5 h-5 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span class="hidden sm:inline">nfiglesias@gmail.com</span>
+                </a>
+                 <a href="https://webpolis.com.ar" target="_blank" rel="noopener noreferrer" class="icon-link flex items-center space-x-2 hover:text-blue-400">
+                    <svg class="w-5 h-5 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L8 12v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-2v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="hidden sm:inline">Homepage</span>
+                </a>
+                <a href="https://github.com/webpolis" target="_blank" rel="noopener noreferrer" class="icon-link flex items-center space-x-2 hover:text-blue-400">
+                    <svg class="w-5 h-5 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="hidden sm:inline">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/iglesiasnicolas" target="_blank" rel="noopener noreferrer" class="icon-link flex items-center space-x-2 hover:text-blue-400">
+                    <svg class="w-5 h-5 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span class="hidden sm:inline">LinkedIn</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <!-- Left Column: Experience -->
+            <div class="lg:col-span-2">
+                <section id="summary">
+                    <h2 class="text-2xl font-bold section-title mb-4 border-b border-gray-700 pb-2">Summary</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Highly skilled and creative software architect with extensive project experience, from concept to full-scale development. Proven talents in system architecture, full-stack engineering, and project management. A self-directed and collaborative team member with a passion for building robust, scalable solutions and leading technical teams to success.
+                    </p>
+                </section>
+
+                <section id="experience" class="mt-10">
+                    <h2 class="text-2xl font-bold section-title mb-6 border-b border-gray-700 pb-2">Work Experience</h2>
+                    <div class="space-y-8">
+                        
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Oct 2024 - Present</p>
+                            <h3 class="font-semibold text-lg text-white">SRE / Full-Stack Engineer</h3>
+                            <p class="text-md text-gray-300">BuildForZero</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Engineered an end-to-end energy management platform for a leading energy provider in the Netherlands.</li>
+                                <li>Architected backend services, database, and deployed all supporting infrastructure on AWS.</li>
+                                <li>Crafted an intuitive UI/UX for the asset and project management dashboard using Remix, React, and TailwindCSS.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Apr 2024 - Aug 2024</p>
+                            <h3 class="font-semibold text-lg text-white">Full-Stack Engineer</h3>
+                            <p class="text-md text-gray-300">SocialSwap.io</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Developed core features for a DeFi exchange on the TRON network.</li>
+                                <li>Managed and deployed smart contracts.</li>
+                                <li>Implemented the complete Web3 UI/UX for swapping and staking functionalities.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Oct 2022 - Aug 2025</p>
+                            <h3 class="font-semibold text-lg text-white">Full-Stack Developer & SRE</h3>
+                            <p class="text-md text-gray-300">Qualtry</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Utilized Node.js and React to create robust and responsive applications.</li>
+                                <li>Led the development of cloud infrastructure for enhanced scalability, reliability, and performance.</li>
+                                <li>Streamlined CI/CD deployments on GitHub and implemented Docker containerization.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Nov 2021 - Aug 2022</p>
+                            <h3 class="font-semibold text-lg text-white">Blockchain Lead & SRE</h3>
+                            <p class="text-md text-gray-300">Numio</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Designed and deployed scalable AWS architecture; managed DevOps and CI/CD workflows.</li>
+                                <li>Created a library for interacting with Ethereum and L2 solutions (Starknet, Polygon, zkSync).</li>
+                                <li>Maintained backend API with NestJS and mobile app with React Native.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Apr 2021 - Jul 2021</p>
+                            <h3 class="font-semibold text-lg text-white">Full Stack Engineer</h3>
+                            <p class="text-md text-gray-300">Euler.tools</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Developed backend gateway for Binance Smart Chain interaction using Web3 and AWS (Kinesis, Lambda, SQS).</li>
+                                <li>Built a REST API with real-time WebSocket communication using FeathersJS.</li>
+                                <li>Designed UI components using React, Redux, and Material UI.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Apr 2020 - Present</p>
+                            <h3 class="font-semibold text-lg text-white">Founder / Principal Software Architect</h3>
+                            <p class="text-md text-gray-300">Cyqle</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Developed Cyqle, an AI-powered collaborative cloud browser to automate team web workflows.</li>
+                                <li>Empowers non-technical employees to automate web tasks and share them as interactive sessions.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Nov 2018 - Jun 2023</p>
+                            <h3 class="font-semibold text-lg text-white">Owner / Software Engineer</h3>
+                            <p class="text-md text-gray-300">Arpado Software</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Managed the full lifecycle of a software product: prototyping, development, testing, branding, marketing, and support.</li>
+                                <li>Designed and distributed cross-platform Music Software with a performant MIDI protocol data exchange.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Apr 2018 - Apr 2020</p>
+                            <h3 class="font-semibold text-lg text-white">Full Stack Engineer</h3>
+                            <p class="text-md text-gray-300">Clearwater Compliance LLC</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Led a team implementing new features for a CRM in Risk Management and Cyber Security.</li>
+                                <li>Handled a diverse stack including PHP (Laravel), JS (Angular), SQL, Docker, and Git.</li>
+                                <li>Worked on an enterprise version of the product using Angular 8, NGRX, and RxJS.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Aug 2016 - Apr 2018</p>
+                            <h3 class="font-semibold text-lg text-white">Lead Engineer / DevOps</h3>
+                            <p class="text-md text-gray-300">GoNitely</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Directed software programming, documentation, and team management.</li>
+                                <li>Managed the full system architecture, CI setup, and a Scrapy Cluster for data scraping.</li>
+                                <li>Implemented NLP for parsing emails and automated browser interaction in a containerized structure.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Jan 2015 - Jan 2016</p>
+                            <h3 class="font-semibold text-lg text-white">Senior Software Engineer</h3>
+                            <p class="text-md text-gray-300">DZone</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Developed custom software solutions for Fortune 500 companies including IBM, Pixar, and Thomson-Reuters.</li>
+                                <li>Used Spring and Hibernate to develop new features and fix bugs.</li>
+                                <li>Conducted intensive security tests to find and fix critical vulnerabilities (XSS, CSRF).</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Feb 2008 - Present</p>
+                            <h3 class="font-semibold text-lg text-white">Freelance Contractor / System Architect</h3>
+                            <p class="text-md text-gray-300">Self-Employed</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Extensive experience in Web3 projects (Ethereum, Polygon, Arbitrum) and high-frequency trading bots.</li>
+                                <li>Focus on developing and experimenting with LLMs (LLaMa, GPT-J) and ML models.</li>
+                                <li>Expertise from low-level C++/Java to high-level UI/UX with React, Angular, and mobile development.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Oct 2010 - Mar 2012</p>
+                            <h3 class="font-semibold text-lg text-white">PHP / .NET Developer</h3>
+                            <p class="text-md text-gray-300">Locality Media</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Conducted full-lifecycle software development using PHP (Yii framework) and JavaScript.</li>
+                                <li>Added new features to a proprietary CRM solution and implemented the Google Maps API.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Jun 2011 - Aug 2011</p>
+                            <h3 class="font-semibold text-lg text-white">Java Analyst / Developer</h3>
+                            <p class="text-md text-gray-300">TUV Rheinland Argentina</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Provided software design and development using Spring, Hibernate, and IceFaces.</li>
+                                <li>Developed a unique solution using Java reflection to simplify database queries.</li>
+                            </ul>
+                        </article>
+                        
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Aug 2010 - Nov 2010</p>
+                            <h3 class="font-semibold text-lg text-white">Senior PHP Programmer Analyst</h3>
+                            <p class="text-md text-gray-300">Clarin Global - CMD</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Maintained and developed the widely accessed website www.mundogaturro.com.</li>
+                                <li>Performed Linux administration and developed software to ease moderation tasks.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">Apr 2008 - May 2010</p>
+                            <h3 class="font-semibold text-lg text-white">Senior PHP / Java / .NET Programmer Analyst</h3>
+                            <p class="text-md text-gray-300">eyespeak LLC</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Programmed in multiple languages including CakePHP, Java (SOAP), and C# (.NET).</li>
+                                <li>Designed and implemented a solution to synchronize data between Microsoft CRM and MySQL databases.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job-card p-4 rounded-r-lg">
+                            <p class="text-gray-400 text-sm">2006 - 2007</p>
+                            <h3 class="font-semibold text-lg text-white">Technical Analyst</h3>
+                            <p class="text-md text-gray-300">Inter.Net Argentina</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Provided base-level IT support and resolved customer technical issues via email, chat, and phone.</li>
+                                <li>Troubleshot hardware and ADSL connectivity issues.</li>
+                            </ul>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Skills & Education -->
+            <div class="lg:col-span-1">
+                <section id="skills">
+                    <h2 class="text-2xl font-bold section-title mb-4 border-b border-gray-700 pb-2">Core Technologies & Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">JavaScript</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">TypeScript</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Python</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Java</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">PHP</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">React</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Node.js</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Angular</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">AWS</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Docker</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Web3</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">SRE</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">CI/CD</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Machine Learning</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">LLMs</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">PyTorch</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">SQL</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">C++</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">C#</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">System Architecture</span>
+                        <span class="skill-tag px-3 py-1 text-sm rounded-full">Microservices</span>
+                    </div>
+                </section>
+
+                <section id="education" class="mt-10">
+                    <h2 class="text-2xl font-bold section-title mb-4 border-b border-gray-700 pb-2">Education & Certifications</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-semibold text-md text-white">Postgraduate, Data Mining</h3>
+                            <p class="text-sm text-gray-400">Universidad Tecnológica Nacional (2018)</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-md text-white">Machine Learning Engineer</h3>
+                            <p class="text-sm text-gray-400">Udacity (2017 - 2018)</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-md text-white">Mathematics Studies</h3>
+                            <p class="text-sm text-gray-400">UADER (2023)</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-md text-white">Bachelor of Social Communication</h3>
+                            <p class="text-sm text-gray-400">Colegio Del Salvador (1986 - 1998)</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="publications" class="mt-10">
+                    <h2 class="text-2xl font-bold section-title mb-4 border-b border-gray-700 pb-2">Publications</h2>
+                     <div class="space-y-2">
+                        <p class="text-gray-300">Music</p>
+                        <p class="text-gray-300">Finances with R</p>
+                     </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>&copy; 2025 Nicolas Iglesias. Designed & Built as a Single Page Application.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
